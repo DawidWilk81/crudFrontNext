@@ -1,0 +1,72 @@
+@import '../../scss/_mixins.scss';
+@import '../../scss/_placeholders.scss';
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+.container{
+    background-color: #ffecec85;
+    height: 150vh;
+    width: 100vw;
+    border-radius: 15px;
+    color: rgba(27, 27, 27, 0.993);
+    opacity: 0.8;
+}
+.container-fluid{
+
+    background-color: #4ABDAC;
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+#content{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.dodaj {
+    height: 85%;
+    margin-top:0.5vh;
+    position: absolute;
+    left:0;
+}
+.options{
+    padding:0;
+    margin-top:15px;
+}
+.modyfikuj{
+    padding: none;
+    height: 50%;
+    width: 100%;
+}
+
+.usun{
+    height: 50%;
+}
+#main-table{
+    text-align: center;
+}
+
+.main-row{
+    
+    height: 10vh;
+    border:1px solid #cccbcb;
+    margin-top:3vh;
+    font-size: 11px;
+    background-color: rgba(255, 255, 255, 0.986);
+    min-height: 10vh;
+    overflow-x: hidden;
+    font-family: 'Arvo', serif;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.form-control{
+    height: 80%;
+    margin-top:1%
+}
+
+i:hover{
+    cursor: pointer;
+    color:rgb(153, 121, 121);
+}

@@ -1,0 +1,17 @@
+%mainButtons{
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    border:none;
+    width: 15%;
+    height: 10%;
+    font-size: 1.4rem;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+%YesNoButtons{
+    float:left;
+    @include bodyBuilder(40%,20%);
+    position: absolute;
+}

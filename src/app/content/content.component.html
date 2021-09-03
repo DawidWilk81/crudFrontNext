@@ -1,0 +1,46 @@
+<!----flex 
+  pagin
+  sortowanie
+-->
+<div class="container-fluid main">
+<div class="container-fluid shadow p-1 mb-3">Top filmy</div>
+
+<div class="container ">
+  <section id ='content'>
+      <div class="row">
+        <!---wyszukiwanie i dodawanie-->
+        <div class="col-6"><input type='text' placeholder="wyszukaj" class="form-control wyszukiwarka" aria-label="Wyszukiwarka" 
+          aria-describedby="inputGroup-sizing-sm"/></div>
+          <div class="col-6"><div class="btn btn-success dodaj" routerLink='Add'>Dodaj</div></div>
+
+      </div>
+  </section>
+  <div class="row">
+    <div class="col-1 col-md-1">id</div>
+    <div class="col-2 col-md-2">Tytul</div>
+    <div class="col-3 col-md-3">Rezyser</div>
+    <div class="col-2 col-md-1">Ocena</div>
+    <div class="col-1 col-md-1"></div>
+    <div class="col-1 col-md-1"></div>
+
+  </div>
+  <content id='main-table' *ngFor='let film of filmy'>
+    <div class="row">
+    <div class="col-12 main-row">
+      <div class="row results">
+        <div class="col-1 col-md-1">{{film.id}}</div>
+        <div class="col-2 col-md-2">{{film.Tytul}}</div>
+        <div class="col-3 col-md-3">{{film.Rezyser}}</div>
+        <div class="col-2 col-md-1">{{film.Ocena}}</div>
+        <div class="col-1 col-md-1"> <i class="fa fa-times" aria-hidden="true"></i></div>
+        <div class="col-1 col-md-1"> <i class="fa fa-wrench" aria-hidden="true"></i></div>
+
+      </div>
+
+    </div>
+
+    </div>
+  </content>
+
+</div>
+</div>

@@ -1,0 +1,25 @@
+<div id = 'contentBox'>
+<br>
+<h1>Modyfikuj</h1>
+<form>
+    <input type='text' placeholder='Tytul' [(ngModel)]='filmy.Tytul' name='Tytul'/>
+    <input type='text' placeholder='Rezyser' [(ngModel)]='filmy.Rezyser' name='Rezyser'/><br>
+    <input type='text' placeholder='Czas trwania' [(ngModel)]='filmy.Czas_trwania' name='Czas_trwania'/>
+    <input type='text' placeholder='Data wydania' [(ngModel)]='filmy.Data_wydania' name='Data_wydania'/><br>
+        <label for="Ocena">Ocena:</label>
+    <select name="Ocena" id="Ocena" [(ngModel)]='filmy.Ocena'>
+    <option value="A">Bardzo dobry</option>
+    <option value="B">Dobry</option>
+    <option value="C">Sredni</option>
+    <option value="D">Slaby</option>
+    <option value="E">Bardzo slaby</option>
+    <option value="F">Beznadziejny</option>
+    </select> 
+    <b>Oparty na książce:</b><input type='checkbox'[(ngModel)]='filmy.Oparty_na_ksiazce' name='Oparty_na_ksiazce'/>
+    <div id ='buttonsCont'>
+    <button class='btn btn-primary' (click)='updateFilm()'>Modyfikuj</button>
+    <button class='btn btn-success' (click)='back()'>Cofnij</button>
+    </div>
+</form>
+     
+</div>

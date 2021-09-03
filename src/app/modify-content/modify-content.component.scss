@@ -1,0 +1,59 @@
+@import '../../scss/_mixins.scss';
+@import '../../scss/_placeholders.scss';
+@import '../../scss/_variables.scss';
+#contentBox{
+    @include bodyBuilder(90vw, 85vh);
+    background-color: $contentBox_Bg;
+    border:1px solid black;
+    padding: 10px;
+    font-size: 1.3em;
+}
+h1{
+    text-align: center;
+    border:1px solid black;
+}
+
+form{
+    @include bodyBuilder(100%, 80%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#buttonsCont{
+    @include bodyBuilder(40%, 15%);
+    margin-top: 10px;
+}
+input[type="text"]{
+    margin-top:10px;
+    @include bodyBuilder(40%, 5%);
+    text-align: center;
+    font-size:1.1rem;
+    border:1px solid black;
+    border-radius: 15px;
+    transition: 0.5s;
+    color:white;
+    &:focus{
+        @include bodyBuilder(45%,5%);
+        border-radius: 25px;
+    }
+}
+input[type="number"]{
+    margin-top:10px;
+}
+.btn{
+    @include bodyBuilder(50%, 80%);
+}
+#Ocena{
+    width: 20%;
+    height: 1.5rem;
+    border:1.4px solid black;
+}
+#Back{
+    background-color: rgb(223, 11, 11);
+    @extend %mainButtons;
+    &:hover{
+        background-color: rgb(230, 39, 39);
+
+    }
+}

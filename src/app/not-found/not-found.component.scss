@@ -1,0 +1,8 @@
+@import '../../scss/_mixins.scss';
+#notFound{
+    @include bodyBuilder(90vw, 85vh);
+}
+h1{
+    text-align: center;
+    font-size: 2rem;
+}

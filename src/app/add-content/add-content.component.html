@@ -1,0 +1,42 @@
+
+
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="col-12">Wprowadź dane o filmie</div>
+        <div class="col-12">
+            Tytul<br/>
+            <input type='text' />
+        </div>
+        <div class="col-12">
+            Rezyser<br/>
+            <input type='text'/>
+        </div>
+
+        <div class="col-12">
+            Czas_trwania(Min)<br/>
+            <input type='number' placeholder="Czas trwania"/>
+        </div>
+
+        <div class="col-12">
+            Data wydania<br/>
+            <input type='date' />
+        </div>
+        <div class="col-12">
+            Ocena<br/>
+            <select name="Ocena" id="Ocena" [(ngModel)]='this.film.Ocena'>
+                <option value="A">Bardzo dobry</option>
+                <option value="B">Dobry</option>
+                <option value="C">Sredni</option>
+                <option value="D">Slaby</option>
+                <option value="E">Bardzo slaby</option>
+                <option value="F">Beznadziejny</option>
+                </select> 
+        </div>
+
+        <div class="col-12">
+            Oparty na ksiazce<br/>
+            <input type='checkbox' />
+        </div>
+    </div>
+</div>

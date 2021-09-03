@@ -1,0 +1,19 @@
+@import '../../scss/_mixins.scss';
+@import '../../scss/_placeholders.scss';
+@import '../../scss/_variables.scss';
+
+.container-fluid{
+    border:1px solid black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4ABDAC;
+}
+
+.container{
+    background-color: #ffecec85;
+    height: 80vh;
+    border-radius: 25px;
+    
+}
